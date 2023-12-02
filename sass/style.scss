@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@600&family=Fraunces:ital,wght@0,700;0,900;1,900&family=Fredoka:wght@400;700&family=Hind+Madurai:wght@400;700&family=Indie+Flower&family=Inter&family=Khula&family=Lato:wght@700&family=Montserrat:ital,wght@0,300;1,100&family=Mulish&family=Nanum+Gothic:wght@400;700&family=Open+Sans:wght@300;700&family=Oswald:wght@200&family=Philosopher:wght@400;700&family=Poppins:wght@100;400&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto:wght@300;400&family=Tektur:wght@600&family=Tilt+Prism&display=swap');
+
+@mixin f-style($f-size, $color, $f-weight) {
+    font-size: $f-size;
+    color: $color;
+    font-weight: $f-weight;
+}
+
+$myFont: 'Khula', sans-serif;
+$IBMfont: 'IBM Plex Sans', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #000;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+
+    .nav__logo {
+        width: 152px;
+        height: 44px;
+        margin-left: 30px;
+
+        img {
+            width: 152px;
+            height: 44px;
+        }
+    }
+}
+
+.nav__menu {
+    flex-grow: 1;
+    margin: 0 0 0 80px;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 0 20px;
+        @include f-style(18px, #fff, 500);
+        font-family: $myFont;
+
+        li {
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+
+}
+
+.nav__search {
+    width: 270px;
+    height: 40px;
+    margin: 0 50px 0 0;
+
+    input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        outline: none;
+        border-radius: 30px;
+        text-indent: 15px;
+        font-size: 18px;
+        color: #fff;
+        background: transparent;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 16px;
+        }
+
+    }
+}
+
+
+
+.hero__container {
+    position: absolute;
+    z-index: 2;
+    width: 420px;
+    height: auto;
+    top: calc(50% - 27%);
+    left: 30px;
+
+    img {
+        width: 420px;
+        margin: 30px 0;
+        height: 95px;
+    }
+
+    .hero__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 340px;
+        margin: auto;
+
+        button:first-child {
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 7px;
+            padding: 7px 25px;
+            color: #000;
+            font-weight: 700;
+            font-size: 26px;
+
+            i {
+                font-size: 26px;
+                color: #000;
+                font-family: 700;
+            }
+        }
+
+        button:last-child {
+            background-color: gray;
+            color: #fff;
+            opacity: 0.8;
+            padding: 8px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 26px;
+            font-weight: 700;
+            font-family: $IBMfont;
+        }
+    }
+
+}
+
+
+.wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 574px;
+    margin: 50px auto 0;
+}
+
+
+.swiper {
+    // position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.row__wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+}
+
+.row__wrapper img {
+    width: 300px;
+    height: 180px;
+}
+
+
+section {
+    margin: 60px 0;
+}
+
+#rowOne {
+    position: absolute;
+    margin-bottom: 100px;
+    top: calc(50% - 350px);
+}
+
+.movie-name {
+    position: absolute;
+    top: calc(28%);
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+
+    // background-color: red;
+    h2 {
+        @include f-style(26px, #fff, 700);
+        font-family: sans-serif;
+        margin: 20px 0 5px 30px;
+    }
+}
+
+.fantastic-movie {
+    display: block;
+    margin: 150px 0 0 0;
+    padding-top: 70px;
+    width: 100%;
+    height: 60px;
+
+    h2 {
+        @include f-style(26px, #fff, 700);
+        font-family: sans-serif;
+        // margin: 150px 0 5px 30px;
+        padding-top: 10px;
+        margin-left: 30px;
+    }
+}
