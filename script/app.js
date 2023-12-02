@@ -1,4 +1,13 @@
 const swapperWrapper = document.querySelector(".swiper-wrapper")
+const heroBunnerTitle = document.querySelector("#hero__bunner-title")
+const mainSwaper = document.querySelector(".swiper-wrapper")
+const mainSwaperOne = document.querySelector("#swiper-wrapperOne")
+const mainSwaperTwo = document.querySelector("#swiper-wrapperTwo")
+const mainSwaperThree = document.querySelector("#swiper-wrapperThree")
+const mainSwaperFour = document.querySelector("#swiper-wrapperFour")
+const mainSwaperFive = document.querySelector("#swiper-wrapperFive")
+
+
 const options = {
     method: "GET",
     headers: {
@@ -7,24 +16,28 @@ const options = {
     }
 };
 
-const mainSwaper = document.querySelector(".swiper-wrapper")
 fetch(`https://api.themoviedb.org/3/movie/top_rated?&with_networks=213`, options)
     .then(response => response.json())
-    .then(data => render(data))
+    .then(data => {
+        console.log(data);
+        render(data)
+    })
 
 function render(data) {
 
     data.results.forEach(swiper => {
         const div = document.createElement("div")
         const img = document.createElement("img")
+        const title = document.createElement("h2")
+        img.src = "https://image.tmdb.org/t/p/original/" + swiper.backdrop_path
+        title.innerHTML = swiper.original_title
         div.className = "swiper-slide";
         div.style = "width: 1400px; height: 500px"
-        img.src = "https://image.tmdb.org/t/p/original/" + swiper.backdrop_path
         div.appendChild(img)
+        div.appendChild(title)
         mainSwaper.appendChild(div)
     })
 }
-const mainSwaperOne = document.querySelector("#swiper-wrapperOne")
 fetch("https://api.themoviedb.org/3/discover/tv", options)
     .then(response => response.json())
     .then(data => rowsrender(data))
@@ -41,7 +54,6 @@ function rowsrender(data) {
     })
 }
 
-const mainSwaperTwo = document.querySelector("#swiper-wrapperTwo")
 fetch("https://api.themoviedb.org/3/discover/movie?&with_genres=28", options)
     .then(response => response.json())
     .then(data => rowsrenderTwo(data))
@@ -58,7 +70,6 @@ function rowsrenderTwo(data) {
     })
 }
 
-const mainSwaperThree = document.querySelector("#swiper-wrapperThree")
 fetch("https://api.themoviedb.org/3/discover/movie?&with_genres=12", options)
     .then(response => response.json())
     .then(data => rowsrenderThree(data))
@@ -75,7 +86,6 @@ function rowsrenderThree(data) {
     })
 }
 
-const mainSwaperFour = document.querySelector("#swiper-wrapperFour")
 fetch("https://api.themoviedb.org/3/discover/movie?&with_genres=878", options)
     .then(response => response.json())
     .then(data => rowsrenderFour(data))
@@ -92,7 +102,6 @@ function rowsrenderFour(data) {
     })
 }
 
-const mainSwaperFive = document.querySelector("#swiper-wrapperFive")
 fetch("https://api.themoviedb.org/3/discover/movie?&with_genres=16", options)
     .then(response => response.json())
     .then(data => rowsrenderFive(data))

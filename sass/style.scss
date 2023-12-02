@@ -88,16 +88,24 @@ nav {
     }
 }
 
-
+.swiper-wrapper{
+    position: relative;
+    h2{
+        position: absolute;
+        top: calc(24%);
+        left: calc(5%);
+        font-size: 80px;
+        color: #fff;
+    }
+}
 
 .hero__container {
     position: absolute;
     z-index: 2;
     width: 420px;
     height: auto;
-    top: calc(50% - 27%);
+    top: calc(50%);
     left: 30px;
-
     img {
         width: 420px;
         margin: 30px 0;
@@ -213,7 +221,7 @@ section {
         font-family: sans-serif;
         margin: 20px 0 5px 30px;
     }
-}
+}       
 
 .fantastic-movie {
     display: block;
