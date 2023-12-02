@@ -2,189 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style/style.min.css">
-    <title>Exam</title>
-  </head>
-  
-  <body>
-    <nav>
-      <div class="nav__logo">
-        <img src="./images/Logo.svg" alt="Netflix-Logo">
-      </div>
-      <div class="nav__menu">
-        <ul>
-          <li>HOME</li>
-          <li>TV-SHOWS</li>
-          <li>MOVIES</li>
-          <li>NEW</li>
-          <li>POPULAR</li>
-        </ul>
-      </div>
-      <div class="nav__search">
-        <input type="search" placeholder="Search">
-      </div>
-    </nav>
-    
-    
-    <div class="wrapper">
-      <div class="swiper mySwiper">
-        <div  class="swiper-wrapper">
-    
-        </div>
-      </div>
-      <div class="hero__container">
-        <img src="./images/Darlings.svg" alt="Darlings">
-        <div class="hero__button">
-          <button class="play-btn"><i class="bi bi-play-fill"></i>Play</button>
-          <button class="info-btn">More Info</button>
-        </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/style.min.css">
+  <title>Netflix Movie</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__logo">
+      <img src="./images/Logo.svg" alt="Netflix-Logo">
+    </div>
+    <div class="nav__menu">
+      <ul>
+        <li>HOME</li>
+        <li>TV-SHOWS</li>
+        <li>MOVIES</li>
+        <li>NEW</li>
+        <li>POPULAR</li>
+      </ul>
+    </div>
+    <div class="nav__search">
+      <input type="search" placeholder="Search">
+    </div>
+  </nav>
+
+
+  <div class="wrapper">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
       </div>
     </div>
-
-      <div class="movie-name">
-        <h2>HollyWood Movies</h2>
+    <div class="hero__container">
+      <img src="./images/Darlings.svg" alt="Darlings">
+      <div class="hero__button">
+        <button class="play-btn"><i class="bi bi-play-fill"></i>Play</button>
+        <button class="info-btn">More Info</button>
       </div>
-      <section class="rowOne" >
-        <div class="swiper mySwiperRowOne" id="rowOne">
-          <div class="swiper-wrapper" id="swiper-wrapperOne">
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
 
-      <div class="fantastic-movie">
-        <h2>Trending Now</h2>
+  <div class="movie-name">
+    <h2>HollyWood Movies</h2>
+  </div>
+  <section class="rowOne">
+    <div class="swiper mySwiperRowOne" id="rowOne">
+      <div class="swiper-wrapper" id="swiper-wrapperOne">
       </div>
-      <section style="margin-top: 50px; width: 100%; height: auto;">
-        <div class="swiper mySwiperRowTwo">
-          <div class="swiper-wrapper" id="swiper-wrapperTwo">
-          </div>
-        </div>
-      </section>
+    </div>
+  </section>
 
-      <section>
-        <div class="swiper mySwiperRowThree">
-          <div class="swiper-wrapper" id="swiper-wrapperThree">
-          </div>
-        </div>
-      </section>
+  <div class="fantastic-movie">
+    <h2>Trending Now</h2>
+  </div>
+  <section style="margin-top: 50px; width: 100%; height: auto;">
+    <div class="swiper mySwiperRowTwo">
+      <div class="swiper-wrapper" id="swiper-wrapperTwo">
+      </div>
+    </div>
+  </section>
 
-      <section>
-        <div class="swiper mySwiperRowFour">
-          <div class="swiper-wrapper" id="swiper-wrapperFour">
-          </div>
-        </div>
-      </section>
-   
-      <section>
-        <div class="swiper mySwiperRowFive">
-          <div class="swiper-wrapper" id="swiper-wrapperFive">
-          </div>
-        </div>
-      </section>
+  <section>
+    <div class="swiper mySwiperRowThree">
+      <div class="swiper-wrapper" id="swiper-wrapperThree">
+      </div>
+    </div>
+  </section>
 
-    <!-- BANNER SWAPPER -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    observer:true,
-    observeParents:true,
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2700,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  <section>
+    <div class="swiper mySwiperRowFour">
+      <div class="swiper-wrapper" id="swiper-wrapperFour">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="swiper mySwiperRowFive">
+      <div class="swiper-wrapper" id="swiper-wrapperFive">
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER SWAPPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2700,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 
 
 
 
-<!-- Qator Swapper -->
+  <!-- Qator Swapper -->
 
-<script>
-  var swiper = new Swiper(".mySwiperRowOne", {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    centeredSlides: false,
-    observer:true,
-    observeParents:true,
-    autoplay: {
-      delay: 1400,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-
-
+  <script>
+    var swiper = new Swiper(".mySwiperRowOne", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      centeredSlides: false,
+      observer: true,
+      observeParents: true,
+      autoplay: {
+        delay: 1400,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 
 
 
-<script>
-  var swiper = new Swiper(".mySwiperRowTwo", {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    centeredSlides: false,
-    observer:true,
-    observeParents:true,
-    autoplay: {
-      delay: 1700,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiperRowThree", {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    centeredSlides: false,
-    observer:true,
-    observeParents:true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiperRowFour", {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    centeredSlides: false,
-    observer:true,
-    observeParents:true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiperRowFive", {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    centeredSlides: false,
-    observer:true,
-    
-    observeParents:true,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-<script  src="./script/app.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiperRowTwo", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      centeredSlides: false,
+      observer: true,
+      observeParents: true,
+      autoplay: {
+        delay: 1700,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiperRowThree", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      centeredSlides: false,
+      observer: true,
+      observeParents: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiperRowFour", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      centeredSlides: false,
+      observer: true,
+      observeParents: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiperRowFive", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      centeredSlides: false,
+      observer: true,
+
+      observeParents: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script src="./script/app.js"></script>
 </body>
+
 </html>
