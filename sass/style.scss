@@ -79,10 +79,13 @@ nav {
         font-size: 18px;
         color: #fff;
         background: transparent;
-
+        transition: 0.2s;
         &::placeholder {
             color: #fff;
             font-size: 16px;
+        }
+        &:focus{
+            box-shadow: 0 0 3px 2px gray;
         }
 
     }
@@ -92,7 +95,7 @@ nav {
     position: relative;
     h2{
         position: absolute;
-        top: calc(24%);
+        top: calc(30%);
         left: calc(5%);
         font-size: 80px;
         color: #fff;
@@ -104,7 +107,7 @@ nav {
     z-index: 2;
     width: 420px;
     height: auto;
-    top: calc(50%);
+    top: calc(80%);
     left: 30px;
     img {
         width: 420px;
@@ -205,12 +208,12 @@ section {
 #rowOne {
     position: absolute;
     margin-bottom: 100px;
-    top: calc(50% - 350px);
+    top: calc(65% - 350px);
 }
 
 .movie-name {
     position: absolute;
-    top: calc(28%);
+    top: calc(40%);
     z-index: 3;
     width: 100%;
     height: 60px;

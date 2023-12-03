@@ -32,7 +32,7 @@ function render(data) {
         img.src = "https://image.tmdb.org/t/p/original/" + swiper.backdrop_path
         title.innerHTML = swiper.original_title
         div.className = "swiper-slide";
-        div.style = "width: 1400px; height: 500px"
+        div.style = "width: 1400px; height: 700px"
         div.appendChild(img)
         div.appendChild(title)
         mainSwaper.appendChild(div)
