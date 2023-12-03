@@ -1,0 +1,1 @@
+const movieId  = +new URLSearchParams(window.location.search).get("movieId")
