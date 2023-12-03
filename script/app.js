@@ -66,10 +66,15 @@ function rowsrenderTwo(data) {
     data.results.forEach(rows => {
         let DivEl = document.createElement("div")
         let Imgel = document.createElement("img")
+        let sorc = "https://image.tmdb.org/t/p/original/"
+        DivEl.innerHTML = `
+            <a href="./pages/aboutMovie.html?movieId=${rows.id}">
+            <img src="${sorc + rows.backdrop_path}">
+            </a>
+        `
+        Imgel.className = "aboutMovie"
         Imgel.style = "width: 250px; height: 180px"
         DivEl.className = "swiper-slide";
-        Imgel.src = "https://image.tmdb.org/t/p/original/" + rows.backdrop_path
-        DivEl.appendChild(Imgel)
         mainSwaperTwo.appendChild(DivEl)
     })
 }
@@ -82,10 +87,15 @@ function rowsrenderThree(data) {
     data.results.forEach(rows => {
         let DivEl = document.createElement("div")
         let Imgel = document.createElement("img")
+        let sorc = "https://image.tmdb.org/t/p/original/"
+        DivEl.innerHTML = `
+            <a href="./pages/aboutMovie.html?movieId=${rows.id}">
+            <img src="${sorc + rows.backdrop_path}">
+            </a>
+        `
+        Imgel.className = "aboutMovie"
         Imgel.style = "width: 250px; height: 180px"
         DivEl.className = "swiper-slide";
-        Imgel.src = "https://image.tmdb.org/t/p/original/" + rows.backdrop_path
-        DivEl.appendChild(Imgel)
         mainSwaperThree.appendChild(DivEl)
     })
 }
@@ -98,10 +108,15 @@ function rowsrenderFour(data) {
     data.results.forEach(rows => {
         let DivEl = document.createElement("div")
         let Imgel = document.createElement("img")
+        let sorc = "https://image.tmdb.org/t/p/original/"
+        DivEl.innerHTML = `
+            <a href="./pages/aboutMovie.html?movieId=${rows.id}">
+            <img src="${sorc + rows.backdrop_path}">
+            </a>
+        `
+        Imgel.className = "aboutMovie"
         Imgel.style = "width: 250px; height: 180px"
         DivEl.className = "swiper-slide";
-        Imgel.src = "https://image.tmdb.org/t/p/original/" + rows.backdrop_path
-        DivEl.appendChild(Imgel)
         mainSwaperFour.appendChild(DivEl)
     })
 }
@@ -113,10 +128,15 @@ function rowsrenderFive(data) {
     data.results.forEach(rows => {
         let DivEl = document.createElement("div")
         let Imgel = document.createElement("img")
+        let sorc = "https://image.tmdb.org/t/p/original/"
+        DivEl.innerHTML = `
+            <a href="./pages/aboutMovie.html?movieId=${rows.id}">
+            <img src="${sorc + rows.backdrop_path}">
+            </a>
+        `
+        Imgel.className = "aboutMovie"
         Imgel.style = "width: 250px; height: 180px"
         DivEl.className = "swiper-slide";
-        Imgel.src = "https://image.tmdb.org/t/p/original/" + rows.backdrop_path
-        DivEl.appendChild(Imgel)
         mainSwaperFive.appendChild(DivEl)
     })
 }
